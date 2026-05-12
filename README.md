@@ -62,22 +62,6 @@ This project focuses on low-level systems concepts, compiler design, intermediat
 
 ---
 
-# Project Structure
-
-```text
-FanC-Compiler/
-│
-├── src/                # Compiler source files
-├── include/            # Header files
-├── tests/              # Input/output tests
-├── examples/           # Example FanC programs
-├── README.md
-├── Makefile
-└── .gitignore
-```
-
----
-
 # Example
 
 ## FanC Source Code
@@ -100,28 +84,6 @@ int main() {
 ```llvm
 %t1 = icmp sgt i32 %x, %y
 br i1 %t1, label %if_true, label %if_false
-```
-
----
-
-# Build & Run
-
-## Build
-
-```bash
-make
-```
-
-## Run Compiler
-
-```bash
-./hw5 < input.in > output.ll
-```
-
-## Execute Generated LLVM IR
-
-```bash
-lli output.ll
 ```
 
 ---
